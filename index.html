@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- a JavaScript/HTML5 game engine primer -->
+<html>
+
+    <!-- the head specifies all meta ( non-visible ) information -->
+    <head>
+
+        <!-- specify the title -->
+        <title>HTML5 Javascript Game, (c) 2014 Mayflower GmbH</title>
+
+        <!-- set the favicon icon -->
+        <link rel="icon"          href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- use this external stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <!-- suppress viewport scalation for TOUCH devices -->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1" />
+
+        <!-- import js-classes -->
+        <script type="text/javascript" src="src/Mfg.js"                 ></script>
+        <script type="text/javascript" src="src/MfgDebug.js"            ></script>
+        <script type="text/javascript" src="src/MfgSettings.js"         ></script>
+        
+        <script type="text/javascript" src="src/game/MfgBlock.js"       ></script>
+        <script type="text/javascript" src="src/game/MfgLevel.js"       ></script>
+        <script type="text/javascript" src="src/game/MfgPlayer.js"      ></script>
+        
+        <script type="text/javascript" src="src/hid/MfgKey.js"          ></script>
+        
+        <script type="text/javascript" src="src/io/MfgImage.js"         ></script>
+        
+        <script type="text/javascript" src="src/game/MfgGame.js"       ></script>
+        
+        <script type="text/javascript" src="src/ui/MfgCamera.js"        ></script>
+        <script type="text/javascript" src="src/ui/MfgCanvas.js"        ></script>
+        <script type="text/javascript" src="src/ui/MfgDrawing.js"       ></script>
+        
+        <script type="text/javascript" src="src/util/MfgRect2D.js"      ></script>
+
+    </head>
+
+    <!-- the body specifies all visible information -->
+    <body class="canvasBody">
+
+        <!-- this div centers our canvas -->
+        <div class="canvasContainer">
+
+            <!-- the HTML5 canvas - It's entry point is specified in src/Mfg.js -->
+            <canvas id="canvas">
+                Canvas has not been initialized yet.
+            </canvas>
+
+        </div>
+
+    </body>
+
+</html>
